@@ -1,0 +1,799 @@
+{
+  "version": "2.0",
+  "scannerSDK": "ml_kit",
+  "isPrescriptionOn": true,
+  "features": [{
+    "feature": "drugSearch",
+    "isNew": false
+  }],
+  "docs": {
+    "agreement": {
+      "ru": "frontend/assets/eula.html",
+      "en": "frontend/assets/eula.html"
+    },
+    "privacyPolicy": {
+      "ru": "",
+      "en": ""
+    }
+  },
+  "presents": {
+    "url": "https://share.flocktory.com/exchange/login?ssid=3064&bid=3752",
+    "agreement": "frontend/assets/sales.html",
+    "enabled": true
+  },
+  "onboarding": [{
+    "caption": "Узнавайте всю правду перед покупкой",
+    "description": "Сканируйте Data Matrix код, чтобы убедиться в подлинности товара, узнать срок годности, среднюю цену и многое другое"
+  }, {
+    "caption": "Сообщайте о нарушениях",
+    "description": "Ваша заявка будет направлена в надзорные органы"
+  }, {
+    "caption": "Следите за здоровьем",
+    "description": "Узнавайте информацию о наличии лекарств в аптеках и настройте будильник, чтобы вовремя их принять"
+  }, {
+    "caption": "Будьте уверены в качестве",
+    "description": "Рейтинг Роскачества позволит не ошибиться с выбором. Приложение также содержит функцию распознавания знаков"
+  }],
+  "drugSearch": {
+    "popular": [{
+      "tradeName": "Цефтриаксон",
+      "labelName": "Цефтриаксон порошок для приготовления раствора для инфузий 2,0 г",
+      "imageUrl": "frontend/assets/drugsearch/ceftriakson.png",
+      "gtins": [
+        "04602884011729"]
+    }, {
+      "tradeName": "Левомеколь",
+      "labelName": "Левомеколь® мазь для наружного применения 40 мг/г + 7,5 мг/г, 40 г",
+      "imageUrl": "frontend/assets/drugsearch/levomekol.png",
+      "gtins": [
+        "04601026006845"]
+    }, {
+      "tradeName": "Ингавирин",
+      "labelName": "Ингавирин® имидазолилэтанамид пентандиовой кислоты 60 мг 7 капсул",
+      "imageUrl": "frontend/assets/drugsearch/ingavirin.png",
+      "gtins": [
+        "04602193011748"]
+    }]
+  },
+  "alarms": {
+    "medicationForms": [{
+      "id": 1,
+      "name": "Таблетки",
+      "image": "frontend/assets/alarms/tablet.svg",
+      "itemUnit": "табл.",
+      "listUnit": "шт.",
+      "inputType": "select",
+      "defaultValue": "1"
+    }, {
+      "id": 3,
+      "name": "Капли",
+      "image": "frontend/assets/alarms/drop.svg",
+      "itemUnit": "кап.",
+      "listUnit": "шт.",
+      "inputType": "key",
+      "defaultValue": "15"
+    }, {
+      "id": 6,
+      "name": "Уколы",
+      "image": "frontend/assets/alarms/injection.svg",
+      "itemUnit": "мл.",
+      "listUnit": "мл.",
+      "inputType": "key",
+      "defaultValue": "5"
+    }, {
+      "id": 5,
+      "name": "Гель/мазь",
+      "image": "frontend/assets/alarms/ointment.svg",
+      "itemUnit": null,
+      "listUnit": null,
+      "inputType": null,
+      "defaultValue": null
+    }, {
+      "id": 4,
+      "name": "Суспензия",
+      "image": "frontend/assets/alarms/suspension.svg",
+      "itemUnit": "мл.",
+      "listUnit": "мл.",
+      "inputType": "key",
+      "defaultValue": "30"
+    }, {
+      "id": 2,
+      "name": "Ампулы",
+      "image": "frontend/assets/alarms/ampoule.svg",
+      "itemUnit": "амп.",
+      "listUnit": "амп.",
+      "inputType": "select",
+      "defaultValue": "1"
+    }, {
+      "id": 7,
+      "name": "Суппозит.",
+      "image": "frontend/assets/alarms/suppository.svg",
+      "itemUnit": "супп.",
+      "listUnit": "шт.",
+      "inputType": "select",
+      "defaultValue": "1"
+    }]
+  },
+  "scanTypes": [{
+    "key": "all",
+    "caption": {
+      "ru": "Все"
+    },
+    "categories": []
+  }, {
+    "key": "mark",
+    "caption": {
+      "ru": "Маркировка"
+    },
+    "categories": [{
+      "key": "tobacco",
+      "caption": {
+        "ru": "Табак"
+      }
+    }, {
+      "key": "drugs",
+      "caption": {
+        "ru": "Лекарства"
+      }
+    }, {
+      "key": "shoes",
+      "caption": {
+        "ru": "Обувь"
+      }
+    }, {
+      "key": "fur",
+      "caption": {
+        "ru": "Мех"
+      }
+    }, {
+      "key": "tires",
+      "caption": {
+        "ru": "Шины"
+      }
+    }, {
+      "key": "perfumery",
+      "caption": {
+        "ru": "Парфюмерия"
+      }
+    }, {
+      "key": "lp",
+      "caption": {
+        "ru": "Одежда"
+      }
+    }, {
+      "key": "electronics",
+      "caption": {
+        "ru": "Фотокамеры"
+      }
+    }, {
+      "key": "milk",
+      "caption": {
+        "ru": "Молочная продукция"
+      }
+    }, {
+      "key": "bicycle",
+      "caption": {
+        "ru": "Велосипеды и рамы"
+      }
+    }, {
+      "key": "water",
+      "caption": {
+        "ru": "Вода минеральная"
+      }
+    }, {
+      "key": "bio",
+      "caption": {
+        "ru": "Биологически активные добавки к пище"
+      }
+    }, {
+      "key": "ncp",
+      "caption": {
+        "ru": "Никотиносодержащая продукция"
+      }
+    }, {
+      "key": "otp",
+      "caption": {
+        "ru": "Альтернативная табачная продукция"
+      }
+    }, {
+      "key": "water",
+      "caption": {
+        "ru": "Упакованная вода"
+      }
+    }, {
+      "key": "beer",
+      "caption": {
+        "ru": "Пиво, напитки, изготавливаемые на основе пива и слабоалкогольные напитки"
+      }
+    }, {
+      "key": "antiseptic",
+      "caption": {
+        "ru": "Антисептики и дезинфицирующие средства"
+      }
+    }, {
+      "key": "petfood",
+      "caption": {
+        "ru": "Корма для домашних животных"
+      }
+    }, {
+      "key": "seafood",
+      "caption": {
+        "ru": "Морепродукты"
+      }
+    }, {
+      "key": "nabeer",
+      "caption": {
+        "ru": "Безалкогольное пиво"
+      }
+    }, {
+      "key": "softdrinks",
+      "caption": {
+        "ru": "Соковая продукция и безалкогольные напитки"
+      }
+    }, {
+      "key": "vegs",
+      "caption": {
+        "ru": "Плодоовощная продукция"
+      }
+    }, {
+      "key": "meat",
+      "caption": {
+        "ru": "Мясо"
+      }
+    }, {
+      "key": "vetpharma",
+      "caption": {
+        "ru": "Ветеринарные препараты"
+      }
+    }, {
+      "key": "toys",
+      "caption": {
+        "ru": "Детские игрушки"
+      }
+    }]
+  }, {
+    "key": "catalog",
+    "caption": {
+      "ru": "Каталог"
+    },
+    "categories": [{
+      "key": "gtin"
+    }]
+  }, {
+    "key": "fiscal",
+    "caption": {
+      "ru": "Кассовый чек"
+    },
+    "categories": [{
+      "key": "fiscal"
+    }]
+  }],
+  "loginScreen": {
+    "auth": [
+      "esiaAuthEnabled",
+      "phoneNumberEnabled"],
+    "title": null,
+    "subtitleAndroid": null,
+    "subtitleIOS": null
+  },
+  "errorScreen": {
+    "errorMessages": [{
+      "httpCode": 503,
+      "errorKey": "mdlp_update",
+      "message": {
+        "ru": "Сервис проверки лекарств обновляется.\nПопробуйте отсканировать код позднее."
+      }
+    }]
+  },
+  "checkResultScreen": {
+    "defaultStatuses": [{
+      "key": "ok",
+      "icon": {
+        "iconType": "positive",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Товар проверен",
+      "description": null,
+      "buttonComplaint": "Сообщить о нарушении",
+      "buttonComplaintUnauthorized": "Сообщить о нарушении",
+      "descriptionItems": {
+        "found": "Найден в системе маркировки",
+        "certDoc": "Есть разрешительная документация",
+        "prVetDocument": "Есть ветеринарный сертификат"
+      },
+      "backgroundColors": [
+        "#4EB63D",
+        "#249D54"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "item_sold",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Товар продан \n${drugsData.lastOperationDate}",
+      "description": "Вы купили товар ${drugsData.lastOperationDate}?",
+      "buttonComplaint": "",
+      "buttonComplaintUnauthorized": "",
+      "buttonChoiceVisible": true,
+      "backgroundColors": [
+        "#63666A",
+        "#434546"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "item_sold_interm",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Товар продан",
+      "description": "Вы купили товар?",
+      "buttonComplaint": "",
+      "buttonComplaintUnauthorized": "",
+      "buttonChoiceVisible": true,
+      "backgroundColors": [
+        "#63666A",
+        "#434546"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "item_sold_receipt",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Товар продан \n${categoryData.cisInfo.receiptDate}",
+      "description": "Вы купили товар ${categoryData.cisInfo.receiptDate}?",
+      "buttonComplaint": "",
+      "buttonComplaintUnauthorized": "",
+      "buttonChoiceVisible": true,
+      "backgroundColors": [
+        "#63666A",
+        "#434546"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "item_sold_receipt_interm",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Товар продан",
+      "description": "Вы купили товар?",
+      "buttonComplaint": "",
+      "buttonComplaintUnauthorized": "",
+      "buttonChoiceVisible": true,
+      "backgroundColors": [
+        "#63666A",
+        "#434546"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "item_sold_remote",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Товар продан \n${categoryData.cisInfo.receiptDate}",
+      "description": "Вы купили товар ${categoryData.cisInfo.receiptDate}?",
+      "buttonComplaint": "",
+      "buttonComplaintUnauthorized": "",
+      "buttonChoiceVisible": true,
+      "backgroundColors": [
+        "#63666A",
+        "#434546"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "item_sold_remote_interm",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Товар продан",
+      "description": "Вы купили товар?",
+      "buttonComplaint": "",
+      "buttonComplaintUnauthorized": "",
+      "buttonChoiceVisible": true,
+      "backgroundColors": [
+        "#63666A",
+        "#434546"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "item_sold_wrong",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Товар продан \n${drugsData.lastOperationDate}",
+      "description": "Если вы видите товар на полке или дата продажи отличается, сообщите о нарушении",
+      "buttonComplaint": "Сообщить о нарушении",
+      "buttonComplaintUnauthorized": "Сообщить о нарушении",
+      "backgroundColors": [
+        "#F34747",
+        "#C33232"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "item_sold_interm_wrong",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Товар продан",
+      "description": "Если вы видите товар на полке, сообщите о нарушении",
+      "buttonComplaint": "Сообщить о нарушении",
+      "buttonComplaintUnauthorized": "Сообщить о нарушении",
+      "backgroundColors": [
+        "#F34747",
+        "#C33232"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "item_sold_receipt_wrong",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Товар продан \n${categoryData.cisInfo.receiptDate}",
+      "description": "Если вы видите товар на полке или дата продажи отличается, сообщите о нарушении",
+      "buttonComplaint": "Сообщить о нарушении",
+      "buttonComplaintUnauthorized": "Сообщить о нарушении",
+      "backgroundColors": [
+        "#F34747",
+        "#C33232"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "item_sold_receipt_interm_wrong",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Товар продан",
+      "description": "Если вы видите товар на полке, сообщите о нарушении",
+      "buttonComplaint": "Сообщить о нарушении",
+      "buttonComplaintUnauthorized": "Сообщить о нарушении",
+      "backgroundColors": [
+        "#F34747",
+        "#C33232"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "item_sold_remote_wrong",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Товар продан \n${categoryData.cisInfo.receiptDate}",
+      "description": "Если вы заказали товар онлайн, то всё в порядке. Если вы видите товар на полке, сообщите о нарушении",
+      "buttonComplaint": "Сообщить о нарушении",
+      "buttonComplaintUnauthorized": "Сообщить о нарушении",
+      "backgroundColors": [
+        "#F34747",
+        "#C33232"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "item_sold_remote_interm_wrong",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Товар продан",
+      "description": "Если вы заказали товар онлайн, то всё в порядке. Если вы видите товар на полке, сообщите о нарушении",
+      "buttonComplaint": "Сообщить о нарушении",
+      "buttonComplaintUnauthorized": "Сообщить о нарушении",
+      "backgroundColors": [
+        "#F34747",
+        "#C33232"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "wrong",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Сомнительный товар",
+      "description": "Мы не можем гарантировать, что товар качественный и безопасный, потому что выполнены не все требования маркировки. Если вы нашли такой товар на полке, сообщите о нарушении",
+      "buttonComplaint": "Сообщить о нарушении",
+      "buttonComplaintUnauthorized": "Сообщить о нарушении",
+      "backgroundColors": [
+        "#F34747",
+        "#C33232"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "experiment_marking",
+      "icon": {
+        "iconType": "empty",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Товар произведён до начала обязательной маркировки",
+      "description": "Возможны несоответствия.\nЭто не является нарушением",
+      "buttonComplaint": "",
+      "buttonComplaintUnauthorized": "",
+      "backgroundColors": [
+        "#63666A",
+        "#434546"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "expired",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Срок годности товара истёк",
+      "description": "Продажа товаров с истёкшим сроком годности является нарушением",
+      "buttonComplaint": "Сообщить о нарушении",
+      "buttonComplaintUnauthorized": "Сообщить о нарушении",
+      "backgroundColors": [
+        "#F34747",
+        "#C33232"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "expired_sold",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Срок годности товара истёк",
+      "description": null,
+      "buttonComplaint": "",
+      "buttonComplaintUnauthorized": "",
+      "backgroundColors": [
+        "#F34747",
+        "#C33232"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "item_in_medical_use",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Лекарство не для продажи",
+      "description": "Если вам предлагают его купить, то это уголовное преступление",
+      "buttonComplaint": "Сообщить о нарушении",
+      "buttonComplaintUnauthorized": "Сообщить о нарушении",
+      "backgroundColors": [
+        "#F34747",
+        "#C33232"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "item_issued_on_prescription",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Лекарство отпущено по рецепту \n${drugsData.lastOperationDate}",
+      "description": "Если вы получили это лекарство по рецепту, то всё в порядке. Если вам предлагают купить это лекарство в аптеке, то это уголовное преступление",
+      "buttonComplaint": "Сообщить о нарушении",
+      "buttonComplaintUnauthorized": "Сообщить о нарушении",
+      "backgroundColors": [
+        "#F34747",
+        "#C33232"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "item_issued_on_prescription_interm",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Лекарство отпущено по рецепту",
+      "description": "Если вы получили это лекарство по рецепту, то всё в порядке. Если вам предлагают купить это лекарство в аптеке, то это уголовное преступление",
+      "buttonComplaint": "Сообщить о нарушении",
+      "buttonComplaintUnauthorized": "Сообщить о нарушении",
+      "backgroundColors": [
+        "#F34747",
+        "#C33232"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "not_found",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Код не найден",
+      "description": "Если товар подлежит маркировке, то это нарушение",
+      "buttonComplaint": "Сообщить о нарушении",
+      "buttonComplaintUnauthorized": "Сообщить о нарушении",
+      "backgroundColors": [
+        "#F34747",
+        "#C33232"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "not_marking_qr",
+      "icon": {
+        "iconType": "cross",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Неизвестный код",
+      "description": "Вы отсканировали QR-код\nДля получения полной информации отсканируйте код Data Matrix",
+      "buttonComplaint": "",
+      "buttonComplaintUnauthorized": "",
+      "backgroundColors": [
+        "#63666A",
+        "#434546"],
+      "textColor": "#FFFFFF",
+      "infoBox": [{
+        "itemType": "titleWidget",
+        "text": "Как выглядит Data Matrix"
+      }, {
+        "itemType": "doubleImageWidget",
+        "iconUrl1": "frontend/assets/config/category_icons/datamatrix_1.svg",
+        "iconUrl2": "frontend/assets/config/category_icons/datamatrix_2.svg"
+      }, {
+        "itemType": "textWidget",
+        "text": "Это уникальный код, который наносится на каждый товар, подлежащий обязательной маркировке"
+      }, {
+        "itemType": "titleWidget",
+        "text": "Какие товары должны быть маркированы"
+      }, {
+        "itemType": "categoryRowWidget",
+        "text": "Молочная продукция",
+        "iconUrl1": "frontend/assets/config/category_icons/milk.svg"
+      }, {
+        "itemType": "categoryRowWidget",
+        "text": "Вода",
+        "iconUrl1": "frontend/assets/config/category_icons/water.svg"
+      }, {
+        "itemType": "categoryRowWidget",
+        "text": "Сигареты",
+        "iconUrl1": "frontend/assets/config/category_icons/tobacco.svg"
+      }, {
+        "itemType": "categoryRowWidget",
+        "text": "Обувь",
+        "iconUrl1": "frontend/assets/config/category_icons/shoes.svg"
+      }, {
+        "itemType": "categoryRowWidget",
+        "text": "Лекарства, входящие в перечень высокозатратных нозологий",
+        "iconUrl1": "frontend/assets/config/category_icons/drugs.svg"
+      }, {
+        "itemType": "categoryRowWidget",
+        "text": "Фотоаппараты и лампы-вcпышки",
+        "iconUrl1": "frontend/assets/config/category_icons/electronics.svg"
+      }, {
+        "itemType": "categoryRowWidget",
+        "text": "Шины и автопокрышки",
+        "iconUrl1": "frontend/assets/config/category_icons/tires.svg"
+      }, {
+        "itemType": "categoryRowWidget",
+        "text": "Продукция легкой промышленности",
+        "iconUrl1L": "frontend/assets/config/category_icons/lp.svg"
+      }, {
+        "itemType": "categoryRowWidget",
+        "text": "Духи и туалетная вода",
+        "iconUrl1": "frontend/assets/config/category_icons/perfumery.svg"
+      }, {
+        "itemType": "violationBannerWidget",
+        "text": "Отсутствие маркировки на товарах из этих категорий - серьезное нарушение законодательства, которое может угрожать вашему здоровью. Обязательно сообщите о нарушении",
+        "buttonText": "Сообщить о нарушении"
+      }]
+    }, {
+      "key": "received",
+      "icon": {
+        "iconType": "positive",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Чек получен",
+      "description": "",
+      "buttonComplaint": "",
+      "buttonComplaintUnauthorized": "",
+      "backgroundColors": [
+        "#4EB63D",
+        "#249D54"],
+      "textColor": "#FFFFFF"
+    }, {
+      "key": "not_received_yet",
+      "icon": {
+        "iconType": "negative",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Чек не получен",
+      "description": "",
+      "buttonComplaint": "",
+      "buttonComplaintUnauthorized": "",
+      "backgroundColors": [
+        "#F34747",
+        "#C33232"],
+      "textColor": "#FFFFFF"
+    }],
+    "drugsStatuses": [{
+      "key": "wrong",
+      "caption": "ЛЕКАРСТВО ЗАПРЕЩЕНО К ПРОДАЖЕ",
+      "description": "Мы не можем гарантировать, что товар качественный и безопасный. Если вы нашли такой товар на полке, сообщите о нарушении"
+    }, {
+      "key": "item_sold_remote",
+      "caption": "Товар продан \n${drugsData.lastOperationDate}",
+      "description": "Вы купили товар ${drugsData.lastOperationDate}"
+    },
+
+      {
+        "key": "item_sold_remote_wrong",
+        "caption": "Товар продан \n${drugsData.lastOperationDate}",
+        "description": "Если вы заказали товар онлайн, то всё в порядке. Если вы видите товар на полке, сообщите о нарушении"
+      }, {
+        "key": "item_sold_receipt",
+        "caption": "Товар продан \n${drugsData.lastOperationDate}",
+        "description": "Вы купили товар ${drugsData.lastOperationDate}?"
+      }, {
+        "key": "item_sold_receipt_wrong",
+        "caption": "Товар продан \n${drugsData.lastOperationDate}",
+        "description": "Если вы видите товар на полке или дата продажи отличается, сообщите о нарушении"
+      }],
+    "furStatuses": [{
+      "key": "item_sold_receipt",
+      "caption": "Товар продан \n${furData.lastEventDate.value}",
+      "description": "Вы купили товар ${furData.lastEventDate.value}?"
+    }, {
+      "key": "item_sold_receipt_wrong",
+      "caption": "Товар продан \n${furData.lastEventDate.value}",
+      "description": "Если вы видите товар на полке или дата продажи отличается, сообщите о нарушении"
+    }],
+    "fiscalStatuses": [{
+      "key": "expired",
+      "icon": {
+        "iconType": "empty",
+        "color": "#99FFFFFF"
+      },
+      "caption": "Чек устарел и не может быть получен",
+      "description": "",
+      "buttonComplaint": "",
+      "buttonComplaintUnauthorized": "",
+      "backgroundColors": [
+        "#63666A",
+        "#434546"],
+      "textColor": "#FFFFFF"
+    }]
+  },
+  "fiscalScreen": {
+    "checkResultLabels": [{
+      "key": "checkOk",
+      "caption": {
+        "ru": "ЧЕК КОРРЕКТЕН"
+      },
+      "visible": true,
+      "colorBackground": "#F6F42E",
+      "colorText": "#63666A",
+      "icon": "positive",
+      "iconColor": "#63666A",
+      "isDeprecated": false
+    }, {
+      "key": "checkFailed",
+      "caption": {
+        "ru": "ЧЕК НЕ КОРРЕКТЕН"
+      },
+      "exclamation": true,
+      "visible": true,
+      "colorBackground": "#FF4848",
+      "colorText": "#FFFFFF",
+      "icon": "negative",
+      "iconColor": "#FFFFFF",
+      "isDeprecated": false
+    }, {
+      "key": "checkInProgress",
+      "caption": {
+        "ru": "ЧЕК НА ПРОВЕРКЕ"
+      },
+      "exclamation": true,
+      "visible": true,
+      "colorBackground": "#FF4848",
+      "colorText": "#FFFFFF"
+    }],
+    "statuses": [{
+      "key": "received",
+      "caption": {
+        "ru": "Чек получен"
+      },
+      "icon": "positive",
+      "iconColor": "#63666A",
+      "isDeprecated": false
+    }, {
+      "key": "not_received_yet",
+      "caption": {
+        "ru": "Чек не получен",
+        "icon": "negative",
+        "iconColor": "#FFFFFF",
+        "isDeprecated": false
+      }
+    }, {
+      "key": "expired",
+      "caption": {
+        "ru": "Чек устарел и не может быть получен",
+        "icon": "cross",
+        "iconColor": "#FF4848",
+        "isDeprecated": false
+      }
+    }]
+  }
+}
